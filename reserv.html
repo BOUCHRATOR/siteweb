@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>reservation en ligne</title>
+<style type="text/css">
+ body{
+    background-color: yellow;
+  }
+  input{
+    margin-bottom: 23px;
+
+  }
+  td:focus{
+     color: red;
+  }
+  select{
+    margin-bottom: 23px;
+  }
+  .t5{
+     font-weight: bold;
+     width: 100px;
+     height: 50px;
+  }
+  #t4{
+    margin-left: 600px;
+  }
+  .t7{
+   width: 500px;
+  }
+</style>
+</head>
+<body>
+   <h1> ___________________________ RÉSERVEZ VOTRE TABLE _____________________________</h1><br>
+  <form id="t1" method="post" action="RESERV.PHP">
+    <table>
+   <tr><td>NOM:</td><td><input type="text" name="nom" size="150" required></td></tr><br>
+ <tr><td> PRENOM:</td><td><input type="text" name="prenom" size="150" required></td></tr>
+  <tr><td> TEL:</td><td><input type="text" name="tel" size="150" required></td></tr>
+  <tr><td> EMAIL:</td><td><input type="text" name="loc" size="150" placeholder="mohamed12@gmail.com" required></td></tr>
+   <tr><td> COMPTE BANCAIRE:</td><td><input type="text" name="BAN" size="150" required></td></tr>
+      <tr><td> DATE DE RÉSERVATION :</td><td><input type="date" name="dat" size="150" required></td></tr>
+      <tr><td> HEURE DE RÉSERVATION :</td>
+         <td>
+            <select name="BAy" id="t6">
+            <option>Selectionner</option>
+         <option>A QUELLE HEURE SOUHAITEZ-VOUS RÉSERVER VOTRE TABLE ?</option>
+         <option>12:00</option>
+         <option>12:30</option>
+         <option>13:00</option>
+         <option>13:30</option>
+         <option>14:00</option>
+         <option>14:30</option>
+         <option>19:00</option>
+         <option>19:30</option>
+         <option>20:00</option>
+         <option>20:30</option>
+         <option>21:00</option>
+         <option>21:30</option>
+         <option>22:00</option>
+         <option>22:30</option>
+        </select></td></tr>
+       
+        <tr><td> NOMBRE DE PERSONNES :</td><td><select name="Bt" id="t7">
+          <option>Selectionner</option>
+         <option> POUR COMBIEN DE PERSONNES SOUHAITEZ-VOUS RÉSERVER ?</option>
+         <option> 1 table pour 1 personne</option>
+          <option> 1 table pour 2 personnes</option>
+           <option> 1 table pour 3 personnes</option>
+            <option> 1 table pour 4 personnes</option>
+             <option> 1 table pour 5 personnes</option>
+              <option> 1 table pour 6 personnes</option>
+               <option> 1 table pour 7 personnes</option>
+                <option> 1 table pour 8 personnes</option>
+                
+         
+        </select></td></tr>
+        
+        <tr><td> RÉSERVEZ VOTRE TABLE EN LIGNE:</td><td><input type="text" name="BANS" size="150" required></td></tr>
+         
+  </table>
+   
+ 
+      <input type="submit" name="retour" value="RETOUR" class="t5" id="t4">
+      <input type="submit" name="valider" value="VALIDER" class="t5" >
+      <input type="reset" name="annuler" value="ANNULER" class="t5">
+   </form>
+   
+   
+</body>
+</html>
